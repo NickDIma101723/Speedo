@@ -1,0 +1,53 @@
+body{
+    background-color: burlywood;
+}
+
+@keyframes moveAround{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 100px);
+        background-color: lightcoral;
+        opacity: 0.5;
+        border-radius: 40px;
+    }
+    50%{
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+        background-color: crimson;
+        border-radius: 60px;
+    }
+    75%{
+        top: calc(100% - 100px);
+        left: 0;
+        background-color: lightyellow;
+        opacity: 1;
+        border-radius: 90px;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: royalblue;
+    }
+}
+
+
+#square{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    animation-name: moveAround;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 3s;
+    animation-fill-mode: none;
+}
